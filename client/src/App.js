@@ -8,14 +8,15 @@ import PostsComponent from './components/PostsComponent/posts'
 
 import useStyles from './styles'
 import { getPost } from "./actions/posts";
+
 const App = ()=>{
         const classes  = useStyles()
 
         const dispatch =useDispatch();
 
         useEffect(()=>{
-            dispatch(getPost())
-        },[dispatch])
+            dispatch(getPost());
+        },[])
 
     return(
         <Container maxWidth="lg" >

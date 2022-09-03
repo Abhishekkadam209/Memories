@@ -7,8 +7,8 @@ import PostModel from "../models/postModel.js"
     // res.status(200).send("post router getpost ")
 
     try {
-        const postMessages =  await  PostModel.find();
-
+        const postMessages =  await  PostModel.find({});
+        console.log(postMessages);
         res.status(200).send(postMessages)
 
     } catch (error) {

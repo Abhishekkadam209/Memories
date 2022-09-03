@@ -16,7 +16,7 @@ const FormComponent = () =>{
     }
 
     const clear = () =>{
-
+                    setPostData({creator :'',title :'',message : '',tags :'',selectedFile : ''});
     }
 
     return(
